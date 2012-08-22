@@ -120,7 +120,8 @@ nmap <Leader>17 :tabnext 17<CR>
 nmap <Leader>18 :tabnext 18<CR>
 nmap <Leader>19 :tabnext 19<CR>
 nmap <Leader>20 :tabnext 20<CR>
-colorscheme wombat
+
+colorscheme candy 
 
 "References
 "http://amix.dk/vim/vimrc.html
