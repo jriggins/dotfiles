@@ -63,9 +63,9 @@ set showmatch "Show matching bracets when text indicator is over them
 set mat=2 "How many tenths of a second to blink
 
 " No sound on errors
-set noerrorbells
-set novisualbell
-set t_vb=
+set errorbells
+set visualbell
+"set t_vb=
 set tm=500
 
 syntax enable "Enable syntax hl
