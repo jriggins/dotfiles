@@ -25,6 +25,7 @@ Plugin 'https://github.com/majutsushi/tagbar.git'
 Plugin 'https://github.com/davidhalter/jedi-vim'
 Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/flazz/vim-colorschemes.git'
+Plugin 'https://github.com/mfukar/robotframework-vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -57,8 +58,9 @@ set wildignore=tmp/**,.git/**
 let g:ackprg="ack-grep -H --nocolor --nogroup --column"
 
 " Set syntax folding of high-level methods
-set foldmethod=syntax
-set foldlevel=1
+set foldenable!
+"set foldmethod=syntax
+"set foldlevel=1
 
 " Always show the status line
 set laststatus=2
@@ -115,11 +117,13 @@ set tw=500
 set ai "Auto indent
 set si "Smart indet
 set wrap "Wrap lines
+set diffopt=filler,vertical
 
 
 " Mappings
 nmap <Leader>nt :NERDTreeToggle<CR>
 nmap <Leader>nf :NERDTreeFind<CR>
+nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>tb :Tagbar<CR>
 nmap <Leader>ba :1,100 bd!<CR>
 nmap <Leader>tn :tabnew<CR>
