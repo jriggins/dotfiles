@@ -1,0 +1,6 @@
+let mapleader = "\"
+
+set surround
+
+nmap VV <C-V>
+"imap <Leader>R <C-R>
