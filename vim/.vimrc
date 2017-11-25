@@ -22,10 +22,11 @@ Plugin 'git://git.wincent.com/command-t.git'
 Plugin 'https://github.com/scrooloose/nerdtree.git'
 Plugin 'https://github.com/scrooloose/nerdcommenter.git'
 Plugin 'https://github.com/majutsushi/tagbar.git'
-Plugin 'https://github.com/davidhalter/jedi-vim'
 Plugin 'https://github.com/ervandew/supertab'
 Plugin 'https://github.com/flazz/vim-colorschemes.git'
 Plugin 'https://github.com/mfukar/robotframework-vim.git'
+Plugin 'https://github.com/Valloric/YouCompleteMe.git'
+Plugin 'https://github.com/mileszs/ack.vim.git'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -119,6 +120,10 @@ set si "Smart indet
 set wrap "Wrap lines
 set diffopt=filler,vertical
 
+" Use Silver Searcher with ack.vim if available
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
 
 " Mappings
 nmap <Leader>nt :NERDTreeToggle<CR>
