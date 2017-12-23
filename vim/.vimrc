@@ -167,3 +167,14 @@ nmap <Leader>17 :tabnext 17<CR>
 nmap <Leader>18 :tabnext 18<CR>
 nmap <Leader>19 :tabnext 19<CR>
 nmap <Leader>20 :tabnext 20<CR>
+
+" Close all other windows except for the current one NERDTree
+" https://vi.stackexchange.com/a/13334/3157
+function! OnlyAndNerdtree()
+  let currentWindowID = win_getid()
+
+  windo if win_getid() != currentWindowID && &filetype != 'nerdtree' | close | endif
+endfunction
+
+" Map :Only to OnlyAndNerdtree()
+command! Only call OnlyAndNerdtree()
