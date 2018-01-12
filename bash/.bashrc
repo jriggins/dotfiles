@@ -103,6 +103,7 @@ export GIT_PS1_SHOWDIRTYSTATE=true
 #export PS1="\u@\h:\w$(__git_ps1 \"(%s)\")$PS1"
 export VISUAL=vim
 export EDITOR=vim
+export RBENV_HOME=$HOME/.rbenv
 
 alias mpdb="mysql -u marketplace_user -pmarketplace_pass marketplace_development"
 alias mpi="ssh marketplace-deploy@marketplace-i.gamesalad.com"
@@ -116,7 +117,10 @@ alias grep="grep --exclude-dir=log"
 alias dl='tail -f log/development.log'
 alias tl='tail -f log/test.log'
 
-export PATH=$PATH:/opt/node/bin
+export PATH=/opt/node/bin:$RBENV_HOME/bin:$PATH
 
 fi
-[[ -s "/usr/local/rvm/scripts/rvm" ]] && source "/usr/local/rvm/scripts/rvm"  # This loads RVM into a shell session.
+
+# load rbenv if it exists
+command -v rbenv >/dev/null && eval "$(rbenv init -)"
+
