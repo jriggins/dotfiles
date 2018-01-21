@@ -27,6 +27,7 @@ Plugin 'https://github.com/flazz/vim-colorschemes.git'
 Plugin 'https://github.com/mfukar/robotframework-vim.git'
 Plugin 'https://github.com/Valloric/YouCompleteMe.git'
 Plugin 'https://github.com/mileszs/ack.vim.git'
+Plugin 'mattn/emmet-vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
