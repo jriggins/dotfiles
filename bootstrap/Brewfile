@@ -1,0 +1,15 @@
+# https://github.com/Homebrew/homebrew-bundle#usage
+
+brew "coreutils"
+brew "glances"
+brew "httpie"
+brew "jq"
+brew "neovim"
+brew "stow"
+brew "the_silver_searcher"
+brew "tree"
+brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+brew "wget"
+
+cask "copyq"
+cask "keepingyouawake"
