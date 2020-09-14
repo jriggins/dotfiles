@@ -50,10 +50,20 @@ let mapleader = '\'
 nmap <CR> :noh<CR>
 
 " NERDTree
-nmap <Leader>gs :Gstatus<CR>
-nmap <Leader>nt :NERDTreeToggle<CR>
-nmap <Leader>nf :NERDTreeFind<CR>
 nmap <Leader>cc :NERDComment<CR>
+nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>nf :NERDTreeFind<CR>
+nmap <Leader>nt :NERDTreeToggle<CR>
+" FZF find buffers
+nmap <Leader>fb :Buffers<CR>
+" FZF find git commits
+nmap <Leader>fc :Commits<CR>
+" FZF find files
+nmap <Leader>ff :Files<CR>
+" FZF find lines
+nmap <Leader>fl :Lines<CR>
+" FZF normal mode mappings
+nmap <Leader>fm :Maps<CR>
 nmap <Leader>tb :TagbarToggle<CR>
 
 ""
@@ -63,6 +73,8 @@ nmap <Leader>tb :TagbarToggle<CR>
 " https://github.com/junegunn/vim-plug#usage
 call plug#begin('~/.local/shared/nvim/plugged')
 
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
