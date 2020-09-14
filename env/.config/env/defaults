@@ -16,3 +16,6 @@ init_powerline() {
 }
 
 init_powerline
+
+# direnv hook
+eval "$(direnv hook zsh)"
