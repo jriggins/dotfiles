@@ -3,6 +3,14 @@
 	email = jriggins@users.noreply.github.com
 [github]
 	user = jriggins
+[alias]
+  br = branch
+  co = checkout
+  dump = cat-file -p
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  st = status
+  sw = switch
 [push]
 	default = simple
 [credential]
