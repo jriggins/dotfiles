@@ -49,7 +49,6 @@ let mapleader = '\'
 " Disables highlights from previous search
 nmap <CR> :noh<CR>
 
-" NERDTree
 nmap <Leader>cc :NERDComment<CR>
 nmap <Leader>gs :Gstatus<CR>
 nmap <Leader>nf :NERDTreeFind<CR>

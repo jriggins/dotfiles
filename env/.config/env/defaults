@@ -1,7 +1,11 @@
-#!/bin/bash
+#!/usr/bin/env zsh
 
+export EDITOR=vi
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_DATA_HOME=$HOME/.local/share
+
+# Set to vi mode
+bindkey -v
 
 # Enable case-insensitive searching and colors
 export LESS="iR"
