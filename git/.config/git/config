@@ -1,0 +1,9 @@
+[user]
+	name = Jesse Riggins
+	email = jriggins@users.noreply.github.com
+[github]
+	user = jriggins
+[push]
+	default = simple
+[credential]
+	helper = osxkeychain

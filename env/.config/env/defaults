@@ -1,0 +1,14 @@
+#!/bin/bash
+
+export XDG_CONFIG_HOME=$HOME/.config
+export XDG_DATA_HOME=$HOME/.local/share
+
+# Enable case-insensitive searching and colors
+export LESS="iR"
+
+init_powerline() {
+  REPOSITORY_ROOT=/usr/local/lib/python3.8/site-packages
+  source $REPOSITORY_ROOT/powerline/bindings/zsh/powerline.zsh
+}
+
+init_powerline
