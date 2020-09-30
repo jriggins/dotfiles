@@ -14,9 +14,20 @@ set_mac_os_defaults() {
   source macosdefaults.sh 
 }
 
-install_brew_formulae() {
-  log "Installing Homebrew Formulae and Casks"
+set_os_defaults() {
+  if [[ "$OSTYPE" == darwin* ]]; then
+    set_mac_os_defaults
+  fi
+}
 
+install_brew_formulae() {
+  if ! command -v brew; then
+    log "Installing Homebrew"
+
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+  fi
+
+  log "Installing Homebrew Formulae and Casks"
   brew bundle
 }
 
@@ -43,7 +54,7 @@ log "Boostrapping"
 
 cd "$(dirname ${BASH_SOURCE})/bootstrap"
 
-set_mac_os_defaults
+set_os_defaults
 install_brew_formulae
 link_dotfiles
 install_vim_plug
