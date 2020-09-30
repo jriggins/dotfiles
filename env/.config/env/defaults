@@ -11,8 +11,10 @@ bindkey -v
 export LESS="iR"
 
 init_powerline() {
-  REPOSITORY_ROOT=/usr/local/lib/python3.8/site-packages
-  source $REPOSITORY_ROOT/powerline/bindings/zsh/powerline.zsh
+  if [ -z $DISABLE_POWERLINE ]; then
+    REPOSITORY_ROOT=/usr/local/lib/python3.8/site-packages
+    source $REPOSITORY_ROOT/powerline/bindings/zsh/powerline.zsh
+  fi
 }
 
 init_powerline

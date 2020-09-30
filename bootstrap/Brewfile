@@ -1,18 +1,31 @@
 # https://github.com/Homebrew/homebrew-bundle#usage
 
+# A cat clone with wings
+brew "bat"
 brew "coreutils"
 brew "direnv"
+# Fuzzy finder
 brew "fzf"
 brew "glances"
+# HTTP client
 brew "httpie"
+# JSON processor
 brew "jq"
+# ncurses-based log file viewer
+brew "lnav"
 brew "neovim"
 brew "stow"
 brew "the_silver_searcher"
+# Simplified man pages
+brew "tldr"
 brew "tmux"
 brew "tree"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
+# HTTP client
 brew "wget"
 
+# Copy buffer manager
 cask "copyq"
+# Mac screen sleep manager
 cask "keepingyouawake"
+cask "visual-studio-code"

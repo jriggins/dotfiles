@@ -1,4 +1,15 @@
 
+# NeoVim
+alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
+
+# Tree with a maxdepth of 3 and show filetypes
+alias t='tree -LF 3'
+
+# Bundler
+alias bi='bundle install'
+
+# Miscellaneous
+alias l='less'
