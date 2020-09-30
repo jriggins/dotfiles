@@ -25,6 +25,11 @@ install_brew_formulae() {
     log "Installing Homebrew"
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
+    
+    if [[ "$OSTYPE" == linux* ]]; then
+      test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+      test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    fi
   fi
 
   log "Installing Homebrew Formulae and Casks"
@@ -50,12 +55,22 @@ link_dotfiles() {
   stow -vv -d .. -t $HOME env zsh tmux nvim git
 }
 
+install_zsh() {
+  if ! command -v zsh; then
+    log "Installing zsh and making default"
+    
+    brew install zsh
+    sudo chsh -s zsh $USER 
+  fi
+}
+
 log "Boostrapping"
 
 cd "$(dirname ${BASH_SOURCE})/bootstrap"
 
 set_os_defaults
 install_brew_formulae
+install_zsh
 link_dotfiles
 install_vim_plug
 

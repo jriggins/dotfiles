@@ -17,7 +17,17 @@ init_powerline() {
   fi
 }
 
+init_brew() {
+  if ! command -v brew; then
+    test -d ~/.linuxbrew && eval $(~/.linuxbrew/bin/brew shellenv)
+    test -d /home/linuxbrew/.linuxbrew && eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+    test -r ~/.bash_profile && echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.bash_profile
+    echo "eval \$($(brew --prefix)/bin/brew shellenv)" >>~/.profile
+  fi
+}
+
 init_powerline
+init_brew
 
 # direnv hook
 eval "$(direnv hook zsh)"
