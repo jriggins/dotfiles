@@ -1,7 +1,10 @@
 #!/usr/bin/env zsh
 
 export EDITOR=vi
+export PAGER=less
+# Set the XDG standard config directory location
 export XDG_CONFIG_HOME=$HOME/.config
+# Set the XDG standard data directory location
 export XDG_DATA_HOME=$HOME/.local/share
 
 # Set to vi mode
