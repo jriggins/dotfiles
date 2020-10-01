@@ -6,6 +6,8 @@ brew "coreutils"
 brew "direnv"
 # Fuzzy finder
 brew "fzf"
+# GitHub CLI
+brew "gh"
 brew "glances"
 # HTTP client
 brew "httpie"
