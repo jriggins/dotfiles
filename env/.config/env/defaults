@@ -9,6 +9,9 @@ export XDG_DATA_HOME=$HOME/.local/share
 
 # Set to vi mode
 bindkey -v
+# From: http://stratus3d.com/blog/2017/10/26/better-vi-mode-in-zshell/
+# `v` is already mapped to visual mode, so we need to use a different key to open Vim
+bindkey -M vicmd "^V" edit-command-line
 
 # Enable case-insensitive searching and colors
 export LESS="iR"

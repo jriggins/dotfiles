@@ -2,3 +2,12 @@
 source $HOME/.config/env/defaults
 source $HOME/.config/env/aliases
 source $HOME/.config/env/functions
+
+# Add completions.
+# Commenting for now as it is messing up things like reverse history search.
+#if type brew &>/dev/null; then
+  #FPATH=$(brew --prefix)/share/zsh/site-functions:$FPATH
+
+  #autoload -Uz compinit
+  #compinit
+#fi

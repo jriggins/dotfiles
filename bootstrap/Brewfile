@@ -1,6 +1,6 @@
 # https://github.com/Homebrew/homebrew-bundle#usage
 
-# A cat clone with wings
+# A cat(1) clone with syntax highlighting and Git integration.
 brew "bat"
 brew "coreutils"
 brew "direnv"
@@ -8,6 +8,7 @@ brew "direnv"
 brew "fzf"
 # GitHub CLI
 brew "gh"
+# Curses-based system monitoring tool
 brew "glances"
 # HTTP client
 brew "httpie"
