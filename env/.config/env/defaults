@@ -1,6 +1,6 @@
 #!/usr/bin/env zsh
 
-export EDITOR=vi
+export EDITOR=nvim
 export PAGER=less
 # Set the XDG standard config directory location
 export XDG_CONFIG_HOME=$HOME/.config
