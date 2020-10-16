@@ -13,3 +13,6 @@ alias bi='bundle install'
 
 # Miscellaneous
 alias l='less'
+
+# View GitHub PRs associated with the current directory
+alias viewpr='gh pr view -w'
