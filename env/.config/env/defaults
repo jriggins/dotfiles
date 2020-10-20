@@ -1,7 +1,7 @@
 #!/usr/bin/env zsh
 
 export EDITOR=nvim
-export PAGER=less
+export PAGER=bat
 # Set the XDG standard config directory location
 export XDG_CONFIG_HOME=$HOME/.config
 # Set the XDG standard data directory location
