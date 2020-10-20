@@ -4,6 +4,8 @@
 brew "bat"
 brew "coreutils"
 brew "direnv"
+# Faster 'find'
+brew "fd"
 # Fuzzy finder
 brew "fzf"
 # GitHub CLI
