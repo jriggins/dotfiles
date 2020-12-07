@@ -2,6 +2,7 @@
 
 # A cat(1) clone with syntax highlighting and Git integration.
 brew "bat"
+# Need to run `brew link coreutils`
 brew "coreutils"
 brew "direnv"
 # Faster 'find'
@@ -12,6 +13,8 @@ brew "fzf"
 brew "gh"
 # Curses-based system monitoring tool
 brew "glances"
+# GNU time utility (installs as 'gtime')
+brew "gnu-time"
 # HTTP client
 brew "httpie"
 # JSON processor
@@ -29,6 +32,8 @@ brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # HTTP client
 brew "wget"
 
+# A non-shitty windows switcher
+cask "alt-tab"
 # Copy buffer manager
 cask "copyq"
 # Mac screen sleep manager
