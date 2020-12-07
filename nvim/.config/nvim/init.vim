@@ -72,6 +72,9 @@ nmap <Leader>tb :TagbarToggle<CR>
 " https://github.com/junegunn/vim-plug#usage
 call plug#begin('~/.local/shared/nvim/plugged')
 
+" Language completion support
+Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
 Plug 'preservim/nerdcommenter'
@@ -92,7 +95,31 @@ Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rbenv'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'sheerun/vim-polyglot'                   " Vim syntax highlighting
 
 call plug#end()
 
+"""""""""""""""
+" Configuration
+"""""""""""""""
+
+""""""""""
+" NERDTree
+""""""""""
+
+" Show hidden files
+let NERDTreeShowHidden=1
+
+""""""""""""""""
+" LanguageClient
+""""""""""""""""
+
+"" Launch gopls when Go files are in use
+"let g:LanguageClient_serverCommands = {
+       "\ 'go': ['gopls', '-logfile', '/tmp/gopls']
+       "\ }
+"" Run gofmt on save
+"autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
+
 " set rtp+=/usr/local/lib/python3.8/site-packages/powerline/bindings/vim
+set rtp+=/usr/local/bin/fzf
