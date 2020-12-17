@@ -11,6 +11,7 @@ brew "fd"
 brew "fzf"
 # GitHub CLI
 brew "gh"
+brew "git"
 # Curses-based system monitoring tool
 brew "glances"
 # GNU time utility (installs as 'gtime')
@@ -34,6 +35,8 @@ brew "wget"
 
 # A non-shitty windows switcher
 cask "alt-tab"
+# SQL thick client
+cask "dbeaver"
 # Copy buffer manager
 cask "copyq"
 # Mac screen sleep manager
