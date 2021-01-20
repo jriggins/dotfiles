@@ -1,8 +1,3 @@
-[user]
-	name = Jesse Riggins
-	email = jriggins@users.noreply.github.com
-[github]
-	user = jriggins
 [alias]
   br = branch
   co = checkout
@@ -11,14 +6,21 @@
   type = cat-file -t
   st = status
   sw = switch
-[push]
-	default = simple
 [credential]
 	helper = osxkeychain
+[fetch]
+	prune = true
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
 	process = git-lfs filter-process
 	required = true
+[github]
+	user = jriggins
 [pull]
 	rebase = true
+[push]
+	default = simple
+[user]
+	name = Jesse Riggins
+	email = jriggins@users.noreply.github.com
