@@ -17,6 +17,10 @@ set_mac_os_defaults() {
 set_os_defaults() {
   if [[ "$OSTYPE" == darwin* ]]; then
     set_mac_os_defaults
+  else
+    # For now, exit under all other OSes.
+    log "Detected $OSTYPE OS. Exiting."
+    exit 0;
   fi
 }
 
