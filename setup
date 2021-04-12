@@ -16,17 +16,22 @@ set_mac_os_defaults() {
 
 set_os_defaults() {
   if [[ "$OSTYPE" == darwin* ]]; then
+    export OS="mac"
     set_mac_os_defaults
   else
-    # For now, exit under all other OSes.
-    log "Detected $OSTYPE OS. Exiting."
-    exit 0;
+    export OS="linux"
   fi
 }
 
 install_brew_formulae() {
   if ! command -v brew; then
     log "Installing Homebrew"
+
+    if [[ "$OS" == "linux" ]]; then
+      LINUXBREW_HOME_DIR=/home/linuxbrew/.linuxbrew
+      log "Creating linuxbrew home directory: $LINUXBREW_HOME_DIR"
+      sudo mkdir -p $LINUXBREW_HOME_DIR
+    fi
 
     /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
   fi
