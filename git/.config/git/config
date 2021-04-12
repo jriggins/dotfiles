@@ -18,7 +18,7 @@
 [github]
 	user = jriggins
 [pull]
-	rebase = true
+	ff = only
 [push]
 	default = simple
 [user]
