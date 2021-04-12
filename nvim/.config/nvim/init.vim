@@ -77,6 +77,7 @@ Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.s
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf'
 Plug 'junegunn/fzf.vim'
+Plug 'junegunn/gv.vim'                        " Git commit browser
 Plug 'preservim/nerdcommenter'
 Plug 'preservim/nerdtree'
 Plug 'preservim/tagbar'
@@ -93,6 +94,7 @@ Plug 'tpope/vim-surround'                     " makes working w/ quotes, braces,
 Plug 'tpope/vim-unimpaired'                   " pairs of handy bracket mappings
 Plug 'tpope/vim-rails'
 Plug 'tpope/vim-rbenv'
+Plug 'tpope/vim-rhubarb'                      " GitHub support for Fugitive
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'                   " Vim syntax highlighting
