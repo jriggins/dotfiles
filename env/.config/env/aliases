@@ -12,7 +12,9 @@ alias t='tree -LF 3'
 alias bi='bundle install'
 
 # Miscellaneous
+alias b='bat'
 alias l='less'
+alias time='gtime -p'
 
 # View GitHub PRs associated with the current directory
 alias viewpr='gh pr view -w'

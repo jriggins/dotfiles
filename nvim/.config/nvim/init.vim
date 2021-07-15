@@ -64,6 +64,11 @@ nmap <Leader>fl :Lines<CR>
 " FZF normal mode mappings
 nmap <Leader>fm :Maps<CR>
 nmap <Leader>tb :TagbarToggle<CR>
+nmap <Leader>it :IndentLinesToggle<CR>
+
+nmap <silent> K <Plug>(lcn-hover)
+nmap <silent> gd <Plug>(lcn-definition)
+" nmap <silent> <F2> <Plug>(lcn-rename)
 
 ""
 " Plugins
@@ -98,6 +103,7 @@ Plug 'tpope/vim-rhubarb'                      " GitHub support for Fugitive
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'sheerun/vim-polyglot'                   " Vim syntax highlighting
+Plug 'Yggdroot/indentLine'                    " Veritcal lines for indentation levels
 
 call plug#end()
 
@@ -112,14 +118,22 @@ call plug#end()
 " Show hidden files
 let NERDTreeShowHidden=1
 
+"""""""""""""
+" Indent Line
+" https://github.com/Yggdroot/indentLine#customization
+"""""""""""""
+let g:indentLine_defaultGroup = 'SpecialKey'
+let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+
 """"""""""""""""
 " LanguageClient
 """"""""""""""""
 
-"" Launch gopls when Go files are in use
-"let g:LanguageClient_serverCommands = {
-       "\ 'go': ['gopls', '-logfile', '/tmp/gopls']
-       "\ }
+"" Launch the appropriate client based on the file.
+let g:LanguageClient_serverCommands = {
+    \ 'go': ['gopls', '-logfile', '/tmp/gopls'],
+    \ 'ruby': ['/Users/jriggins/.rbenv/versions/2.7.1/bin/solargraph', 'stdio']
+    \ }
 "" Run gofmt on save
 "autocmd BufWritePre *.go :call LanguageClient#textDocument_formatting_sync()
 

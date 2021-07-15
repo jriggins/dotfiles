@@ -24,3 +24,5 @@
 [user]
 	name = Jesse Riggins
 	email = jriggins@users.noreply.github.com
+[init]
+	defaultBranch = main
