@@ -2,6 +2,8 @@
 
 # A cat(1) clone with syntax highlighting and Git integration.
 brew "bat"
+# Help for managing multiple time zones
+brew "clocker"
 # Need to run `brew link coreutils`
 brew "coreutils"
 brew "direnv"
