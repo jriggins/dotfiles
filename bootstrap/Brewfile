@@ -6,6 +6,8 @@ brew "bat"
 brew "clocker"
 # Need to run `brew link coreutils`
 brew "coreutils"
+# DNS client
+brew "dog"
 brew "direnv"
 # Faster 'find'
 brew "fd"
