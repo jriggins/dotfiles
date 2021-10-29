@@ -56,12 +56,15 @@ link_dotfiles() {
 
 log "Boostrapping"
 
-cd "$(dirname ${BASH_SOURCE})/bootstrap"
-
-set_os_defaults
-install_brew_formulae
-link_dotfiles
-install_vim_plug
+if [[ "$OSTYPE" == darwin* ]]; then
+  cd "$(dirname ${BASH_SOURCE})/bootstrap"
+  set_os_defaults
+  install_brew_formulae
+  link_dotfiles
+  install_vim_plug
+elif [[ -n $CODESPACES ]]; then
+  # TBD 
+end
 
 cd -
 
