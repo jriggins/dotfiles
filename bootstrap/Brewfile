@@ -45,4 +45,7 @@ cask "dbeaver"
 cask "copyq"
 # Mac screen sleep manager
 cask "keepingyouawake"
+# System monitor (including fans)
+cask "stats"
+# Alternative to Rubymine (my first ❤️  )
 cask "visual-studio-code"

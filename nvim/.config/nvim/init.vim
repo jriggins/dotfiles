@@ -70,6 +70,11 @@ nmap <silent> K <Plug>(lcn-hover)
 nmap <silent> gd <Plug>(lcn-definition)
 " nmap <silent> <F2> <Plug>(lcn-rename)
 
+" Search visually selected text
+" https://vim.fandom.com/wiki/Search_for_visually_selected_text
+vnoremap // y/\V<C-R>=escape(@",'/\')<CR><CR>
+
+
 ""
 " Plugins
 "
@@ -124,6 +129,7 @@ let NERDTreeShowHidden=1
 """""""""""""
 let g:indentLine_defaultGroup = 'SpecialKey'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+let g:indentLine_enabled = 0
 
 """"""""""""""""
 " LanguageClient
