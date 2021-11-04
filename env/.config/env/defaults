@@ -6,6 +6,9 @@ export PAGER=bat
 export XDG_CONFIG_HOME=$HOME/.config
 # Set the XDG standard data directory location
 export XDG_DATA_HOME=$HOME/.local/share
+# Allow fzf to include hidden files except for those
+# explicitly ignored. This will be used in vim as well.
+export FZF_DEFAULT_COMMAND='ag --hidden --ignore .git -g ""' 
 
 # Set to vi mode
 bindkey -v
