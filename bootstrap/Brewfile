@@ -2,10 +2,9 @@
 
 # A cat(1) clone with syntax highlighting and Git integration.
 brew "bat"
-# Help for managing multiple time zones
-brew "clocker"
 # Need to run `brew link coreutils`
 brew "coreutils"
+brew "ctop"
 # DNS client
 brew "dog"
 brew "direnv"
@@ -20,29 +19,48 @@ brew "git"
 brew "glances"
 # GNU time utility (installs as 'gtime')
 brew "gnu-time"
+# Newer top
+brew "htop"
 # HTTP client
 brew "httpie"
 # JSON processor
 brew "jq"
 # ncurses-based log file viewer
 brew "lnav"
+# Mac App Store CLI
+brew "mas"
 brew "neovim"
+# Manage symlinks
 brew "stow"
+# Faster grep
 brew "the_silver_searcher"
-# Simplified man pages
+# Simplified man pages with examples
 brew "tldr"
+# Terminal Multiplexer (a better Screen :) )
 brew "tmux"
+# List directory contents in a tree format
 brew "tree"
+# Ctags
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # HTTP client
 brew "wget"
 
+# Command tab assistant
+cask "alfred"
 # A non-shitty windows switcher
 cask "alt-tab"
+# Help for managing multiple time zones
+cask "clocker"
 # SQL thick client
-cask "dbeaver"
+cask "dbeaver-community"
 # Copy buffer manager
 cask "copyq"
+cask "docker"
+cask "evernote"
+cask "firefox"
+cask "iterm2"
 # Mac screen sleep manager
 cask "keepingyouawake"
+cask "slack"
+# Good editor. Ok IDE.
 cask "visual-studio-code"
