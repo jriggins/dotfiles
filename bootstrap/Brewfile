@@ -49,6 +49,8 @@ brew "wget"
 cask "alfred"
 # A non-shitty windows switcher
 cask "alt-tab"
+# API documentation browser
+cask "dash"
 # Help for managing multiple time zones
 cask "clocker"
 # SQL thick client
@@ -59,6 +61,8 @@ cask "docker"
 cask "evernote"
 cask "firefox"
 cask "iterm2"
+# Keyboard customizer
+cask "karabiner-elements"
 # Mac screen sleep manager
 cask "keepingyouawake"
 cask "slack"
