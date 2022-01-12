@@ -25,4 +25,9 @@ killall Finder
 # Automatically hide and show
 defaults write com.apple.dock autohide -bool true
 
+##
+# VSCode
+#
 
+# Enable repeated key presses on hold
+defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
