@@ -50,7 +50,7 @@ let mapleader = '\'
 nmap <CR> :noh<CR>
 
 nmap <Leader>cc :NERDComment<CR>
-nmap <Leader>gs :Gstatus<CR>
+nmap <Leader>gs :Git<CR>
 nmap <Leader>nf :NERDTreeFind<CR>
 nmap <Leader>nt :NERDTreeToggle<CR>
 " FZF find buffers
