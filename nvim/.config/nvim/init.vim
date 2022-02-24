@@ -12,8 +12,8 @@ set tabstop=2
 set shiftwidth=2
 " Show ruler
 set ruler
-" Show line numbers
-set number
+" Show line numbers relative to the cursor
+set relativenumber
 " Highlight search
 set hlsearch
 " Incremental search
