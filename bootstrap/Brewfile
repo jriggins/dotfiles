@@ -4,6 +4,8 @@
 brew "bat"
 # Need to run `brew link coreutils`
 brew "coreutils"
+# Code line counter
+brew "cloc"
 brew "ctop"
 # DNS client
 brew "dog"
@@ -15,6 +17,7 @@ brew "fzf"
 # GitHub CLI
 brew "gh"
 brew "git"
+brew "git-lfs"
 # Curses-based system monitoring tool
 brew "glances"
 # GNU time utility (installs as 'gtime')
@@ -25,6 +28,8 @@ brew "htop"
 brew "httpie"
 # JSON processor
 brew "jq"
+# Kubernetes CLI
+brew "k9s"
 # ncurses-based log file viewer
 brew "lnav"
 # Mac App Store CLI
@@ -44,6 +49,8 @@ brew "tree"
 brew "universal-ctags/universal-ctags/universal-ctags", args: ["HEAD"]
 # HTTP client
 brew "wget"
+# HTTP benchmarking tool
+brew "wrk"
 
 # Command tab assistant
 cask "alfred"
