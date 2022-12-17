@@ -124,6 +124,7 @@ let NERDTreeShowHidden=1
 """""""""""""
 let g:indentLine_defaultGroup = 'SpecialKey'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
+IndentLinesDisable
 
 """"""""""""""""
 " LanguageClient

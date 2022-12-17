@@ -23,3 +23,5 @@ alias dc='docker-compose'
 
 # View current branch in GitHub as a web page
 alias ghview='gh repo view -w -b `git branch --show-current`'
+
+alias gitrefresh='git checkout main && git pull'
