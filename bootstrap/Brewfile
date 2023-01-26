@@ -32,7 +32,11 @@ brew "htop"
 # HTTP client
 brew "httpie"
 # JSON processor
+# https://stedolan.github.io/jq/
 brew "jq"
+# Another JSON processor
+# https://github.com/jmespath/jp
+brew "jmespath/jmespath/jp"
 # Kubernetes high-level CLI
 brew "k9s"
 # Kubernetes low-level CLI 
