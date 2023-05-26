@@ -98,5 +98,7 @@ cask "keepingyouawake"
 # Knowledge base on top of a local folder of plain text Markdown files
 cask "obsidian"
 cask "slack"
+# Mac GUI for Neovim
+cask "vimr"
 # Good editor. Ok IDE.
 cask "visual-studio-code"
