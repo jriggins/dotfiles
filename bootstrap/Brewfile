@@ -49,6 +49,9 @@ brew "lnav"
 brew "mas"
 brew "neovim"
 brew "npm"
+# Rust Language Support
+# Required by some nvim plugins for language support on ARM64
+brew "rust"
 # Kubernetes logging tool
 brew "stern"
 # Manage symlinks

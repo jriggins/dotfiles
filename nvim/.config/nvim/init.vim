@@ -40,6 +40,11 @@ set wrap
 " Enable mouse integration for all modes
 set mouse=a
 
+" Vim Markdown
+" https://github.com/preservim/vim-markdown#concealing
+set concealcursor=i
+set conceallevel=2
+
 let mapleader = '\'
 
 ""
@@ -78,6 +83,8 @@ nmap <silent> gd <Plug>(lcn-definition)
 call plug#begin('~/.local/shared/nvim/plugged')
 
 " Language completion support
+" May need these steps on ARM64
+" https://github.com/autozimu/LanguageClient-neovim/issues/1236#issuecomment-1176742436
 Plug 'autozimu/LanguageClient-neovim', { 'branch': 'next', 'do': 'bash install.sh' }
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
 Plug 'junegunn/fzf'
@@ -124,7 +131,7 @@ let NERDTreeShowHidden=1
 """""""""""""
 let g:indentLine_defaultGroup = 'SpecialKey'
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
-IndentLinesDisable
+"IndentLinesDisable
 
 """"""""""""""""
 " LanguageClient
