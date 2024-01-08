@@ -1,11 +1,21 @@
 [alias]
+	# 
+	# Some influences from:
+	# https://snyk.io/blog/10-git-aliases-for-faster-and-productive-git-workflow/
+	#
   br = branch
   co = checkout
   dump = cat-file -p
+	; TODO: Get this to work like I want.
+	;featuredone = "!f() { local BRANCH=${$1:-@{-1}}; git checkout main && git pull && git branch -d $BRANCH; }; f"
+	featuredone = !git checkout main && git pull && git branch -d @{-1}
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+	pushup = !git push origin HEAD
   type = cat-file -t
+	save = !git add -A && git commit -m 'chore: commit save point'
   st = status
   sw = switch
+	undo = reset HEAD~1 --mixed
 [credential]
 	helper = osxkeychain
 [fetch]
