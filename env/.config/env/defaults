@@ -28,5 +28,12 @@ init_powerline() {
 
 # init_powerline
 
+# Saves each command to the history file as soon as it is executed4. 
+# This means that the command is available to new shell sessions right away.
+setopt inc_append_history
+# Loads the history file every time the history command is called, making the history immediately 
+# available across all sessions.
+setopt share_history
+
 # direnv hook
 eval "$(direnv hook zsh)"

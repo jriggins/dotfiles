@@ -12,7 +12,8 @@ set tabstop=2
 set shiftwidth=2
 " Show ruler
 set ruler
-" Show line numbers relative to the cursor
+" Show line numbers relative to the cursor as well as the current line number
+set number
 set relativenumber
 " Highlight search
 set hlsearch
@@ -147,3 +148,8 @@ let g:LanguageClient_serverCommands = {
 
 " set rtp+=/usr/local/lib/python3.8/site-packages/powerline/bindings/vim
 set rtp+=/usr/local/bin/fzf
+
+" Colors
+hi DiffChange ctermbg=blue
+hi DiffText cterm=inverse ctermbg=blue
+
