@@ -89,12 +89,13 @@ cask "dbeaver-community"
 cask "copyq"
 cask "docker"
 cask "evernote"
-cask "firefox"
 cask "iterm2"
 # Keyboard customizer
 cask "karabiner-elements"
 # Mac screen sleep manager
 cask "keepingyouawake"
+# Firefox fork
+cask "librewolf"
 # Knowledge base on top of a local folder of plain text Markdown files
 cask "obsidian"
 cask "slack"
