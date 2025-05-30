@@ -1,31 +1,34 @@
 
-# NeoVim
+## NeoVim
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias view='nvim -R'
 
-# Tree with a maxdepth of 3 and show filetypes
+## Tree with a maxdepth of 3 and show filetypes
 alias t='tree -LF 3'
 
-# Bundler
+## Bundler
 alias bi='bundle install'
 
-# Miscellaneous
+## Miscellaneous
 alias b='bat'
 alias l='less'
 alias time='gtime -p'
+# Print date with YYYYMMDDHHMMSS
+alias datets='date -u +%Y%m%d%H%M%S'
 
-# View GitHub PRs associated with the current directory
+## View GitHub PRs associated with the current directory
 alias viewpr='gh pr view -w'
 
 alias dc='docker-compose'
 
-# View current branch in GitHub as a web page
+## View current branch in GitHub as a web page
 alias ghview='gh browse -b `git branch --show-current`'
 
 alias gitrefresh='git checkout main && git pull'
 
+## Kubernetes
 alias k='kubectl'
 alias kcctx='kubectl config current-context'
 alias kuctx='kubectl config use-context'
